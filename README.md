@@ -9,7 +9,7 @@
 
 *Register your mobile/web app and get json credential and set it in your app and generate a token through it*
 
-*Go to Project Settings => Service Account and click on generate new private key as file will be downloaded rename and copy it to your clonned code directory.*
+*Go to Project Settings => Service Account and click on generate new private key, as file will be downloaded rename and copy it to your clonned code directory.*
 
 ### We would Need to set some env variables for you to run this repo
 
@@ -17,7 +17,7 @@
 *This will referred as path of private key you downloaded*
 
 > PROJECT_NAME
-*This is referred as project name you set in firebase* 
+*This is referred as project id generated in firebase* 
 
 ### There are below mentioned routes which can be used to send notification with token generated from web/app.
 
@@ -31,7 +31,7 @@
   }
   ```  
 - /bulkSend
-   In this you can only send to one token at once with body
+   In this you can send notification to multiple tokens at once with body
   ```
   {
     fcm_tokens: [],
